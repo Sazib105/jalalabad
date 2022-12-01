@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>JSWA </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- header start here -->
+    <div class="header" id="header">
+        <div class="header-content">
+            <div class="text">
+                <h1>Jalalabad </h1>
+                <p>Student's Welfare Association, DUET</p>
+            </div>
+            <div class="header-right">
+                <div class="social-media">
+                    <span class="fb">
+                        <i class="fa-brands fa-facebook" id="fb"></i>
+                        <label for="fb">facebook</label>
+                    </span>
+                    <span class="wt">
+                        <i class="fa-brands fa-whatsapp" id="wt"></i>
+                        <label for="wt">Whatsapp</label>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- header end here -->
+
+    <!-- navigation strat here -->
+    <nav class="navbar" id="navbar">
+        <input type="checkbox" name="" id="check" class="check">
+        <label for="check" class="check-btn"><i class="fa-solid fa-bars"></i></label>
+        <div class="nav-content">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html">Gallery</a></li>
+                <li class="dropdown">
+                    <a href="index.html">Members</a>&nbsp
+                    <i class="fa-sharp fa-solid fa-angle-down"></i>
+                    <div class="dropdown-content">
+                        <ol>
+                            <li><a href="#">Current</a></li>
+                            <li><a href="#">Alumni</a></li>
+                        </ol>
+                    </div>
+                    
+                </li>
+                <li><a href="index.html">Join</a></li>
+                <li><a href="index.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+    
+    <!-- navigation end here -->
+
+    <div class="container">
+
+        
+
+    </div>
+    <script>
+        window.onscroll = function () { myFunction() };
+
+        var navbar = document.getElementById("container");
+        var header = document.getElementById("header");
+        var sticky = navbar.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset >= 1) {
+                header.classList.add("shaddow")
+            } else {
+                header.classList.remove("shaddow");
+            }
+        }
+    </script>
+</body>
+
+</html>
